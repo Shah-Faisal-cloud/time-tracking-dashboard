@@ -712,7 +712,7 @@ video {
 }
 
 .card-inner {
-  margin-top: -2.5rem;
+  margin-top: -2.25rem;
   display: flex;
   cursor: pointer;
   flex-direction: column;
@@ -840,6 +840,10 @@ video {
   min-height: 100vh;
 }
 
+.flex-col {
+  flex-direction: column;
+}
+
 .justify-center {
   justify-content: center;
 }
@@ -847,6 +851,11 @@ video {
 .bg-exercise-green-400 {
   --tw-bg-opacity: 1;
   background-color: hsl(145 58% 55% / var(--tw-bg-opacity, 1));
+}
+
+.bg-navy-950 {
+  --tw-bg-opacity: 1;
+  background-color: hsl(226 43% 10% / var(--tw-bg-opacity, 1));
 }
 
 .bg-play-blue-300 {

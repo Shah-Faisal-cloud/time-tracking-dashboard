@@ -36,7 +36,7 @@ body{
         @apply flex flex-col overflow-hidden rounded-xl max-w-80 min-w-60;
     }
     .card-inner{
-        @apply flex flex-col px-6 -mt-10 transition-colors duration-200 ease-linear cursor-pointer bg-navy-900 rounded-xl py-9 gap-y-2 md:gap-y-3 lg:gap-y-7 hover:bg-purple-500;
+        @apply flex flex-col px-6 transition-colors duration-200 ease-linear cursor-pointer -mt-9 bg-navy-900 rounded-xl py-9 gap-y-2 md:gap-y-3 lg:gap-y-7 hover:bg-purple-500;
     }
     .card-header{
         @apply flex items-center justify-between;
