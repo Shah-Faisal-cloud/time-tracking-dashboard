@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./src/output.css">
+  <title>Frontend Mentor | Time tracking dashboard</title>
+</head>
+
+<body class="flex justify-center min-h-screen lg:items-center">
+  <main class="main">
+    <section class="profile-card"> 
+      <header class="profile-header">
+        <img src="./images/image-jeremy.png" alt="A profile image"
+          class="profile-avatar">
+        <div>
+          <span class="text-navy-200">Report for</span>
+          <h1 class="profile-heading">
+            <span>Jeremy</span>
+            <span>Robson</span>
+          </h1>
+        </div>
+      </header>
+      <nav class="profile-nav">
+        <button class="button" data-timeframe="daily">Daily</button>
+        <button class="button" data-timeframe="weekly">Weekly</button>
+        <button class="button" data-timeframe="monthly">Monthly</button>
+      </nav>
+    </section>
+    <section class="card bg-work-orange-300" data-card-title="Work">
+      <img src="./images/icon-work.svg" alt="A briefcase icon" class="card-image">
+      <div class="card-inner">
+        <header class="card-header">
+          <h3 class="card-title"></h3>
+          <div class="dots-wrapper">
+            <span class="dots"></span>
+            <span class="dots"></span>
+            <span class="dots"></span>
+          </div>
+        </header>
+        <div class="stats-wrapper">
+          <p class="current-stats">
+            <span data-current-hours></span>hrs
+          </p>
+          <p class="prev-stats">Last Week -
+            <span data-prev-hours></span>hrs
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="card bg-play-blue-300" data-card-title="Play">
+      <img src="./images/icon-play.svg" alt="A briefcase icon" class="card-image">
+      <div class="card-inner">
+        <header class="card-header">
+          <h3 class="card-title"></h3>
+          <div class="dots-wrapper">
+            <span class="dots"></span>
+            <span class="dots"></span>
+            <span class="dots"></span>
+          </div>
+        </header>
+        <div class="stats-wrapper">
+          <p class="current-stats">
+            <span data-current-hours></span>hrs
+          </p>
+          <p class="prev-stats">Last Week -
+            <span data-prev-hours></span>hrs
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="card bg-study-pink-400" data-card-title="Study">
+      <img src="./images/icon-study.svg" alt="A briefcase icon" class="card-image">
+      <div class="card-inner">
+        <header class="card-header">
+          <h3 class="card-title"></h3>
+          <div class="dots-wrapper">
+            <span class="dots"></span>
+            <span class="dots"></span>
+            <span class="dots"></span>
+          </div>
+        </header>
+        <div class="stats-wrapper">
+          <p class="current-stats">
+            <span data-current-hours></span>hrs
+          </p>
+          <p class="prev-stats">Last Week -
+            <span data-prev-hours></span>hrs
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="card bg-exercise-green-400" data-card-title="Exercise">
+      <img src="./images/icon-exercise.svg" alt="A briefcase icon" class="card-image">
+      <div class="card-inner">
+        <header class="card-header">
+          <h3 class="card-title"></h3>
+          <div class="dots-wrapper">
+            <span class="dots"></span>
+            <span class="dots"></span>
+            <span class="dots"></span>
+          </div>
+        </header>
+        <div class="stats-wrapper">
+          <p class="current-stats">
+            <span data-current-hours></span>hrs
+          </p>
+          <p class="prev-stats">Last Week -
+            <span data-prev-hours></span>hrs
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="card bg-social-purple-700" data-card-title="Social">
+      <img src="./images/icon-social.svg" alt="A briefcase icon" class="card-image">
+      <div class="card-inner">
+        <header class="card-header">
+          <h3 class="card-title"></h3>
+          <div class="dots-wrapper">
+            <span class="dots"></span>
+            <span class="dots"></span>
+            <span class="dots"></span>
+          </div>
+        </header>
+        <div class="stats-wrapper">
+          <p class="current-stats">
+            <span data-current-hours></span>hrs
+          </p>
+          <p class="prev-stats">Last Week -
+            <span data-prev-hours></span>hrs
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="card bg-selfcare-yellow-300" data-card-title="Self Care">
+      <img src="./images/icon-self-care.svg" alt="A briefcase icon" class="card-image">
+      <div class="card-inner">
+        <header class="card-header">
+          <h3 class="card-title"></h3>
+          <div class="dots-wrapper">
+            <span class="dots"></span>
+            <span class="dots"></span>
+            <span class="dots"></span>
+          </div>
+        </header>
+        <div class="stats-wrapper">
+          <p class="current-stats">
+            <span data-current-hours></span>hrs
+          </p>
+          <p class="prev-stats">Last Week -
+            <span data-prev-hours></span>hrs
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="./src/script.js"></script>
+</body>
+
+</html>

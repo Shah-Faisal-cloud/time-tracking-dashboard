@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    font-family: 'Rubik';
+    font-size: 16px;
+}
+
+@layer components{
+    .main{
+        @apply grid h-full grid-cols-1 mt-10 mb-10 md:mb-0 md:items-start md:justify-items-center lg:mt-0 md:px-5 md:grid-cols-3 lg:grid-cols-4 md:gap-x-5 gap-y-5;
+    }
+    .profile-card{
+        @apply flex flex-col overflow-hidden md:row-span-3 lg:row-span-2 md:col-span-1 rounded-xl min-w-60 max-w-80 bg-navy-900;
+    }
+    .profile-header{
+        @apply flex items-center gap-6 px-6 lg:px-8 md:flex-col md:items-start py-7 lg:py-12 md:pb-20 lg:pb-28 bg-primary-purple-600 rounded-b-xl;
+    }
+    .profile-avatar{
+        @apply w-[72px] border-white border-[3px] rounded-full;
+    }
+    .profile-heading{
+        @apply flex gap-1 text-2xl font-light text-white md:flex-col md:text-3xl;
+    }
+    .profile-nav{
+        @apply flex justify-between py-6 md:flex-col md:items-start md:gap-y-4 md:py-8 px-7;
+    }
+    .button{
+        @apply transition-colors duration-200 ease-linear text-navy-200 hover:text-white;
+    }
+    .button.active{
+        @apply text-white;
+    }
+    .card{
+        @apply flex flex-col overflow-hidden rounded-xl max-w-80 min-w-60;
+    }
+    .card-inner{
+        @apply flex flex-col px-6 -mt-10 transition-colors duration-200 ease-linear cursor-pointer bg-navy-900 rounded-xl py-9 gap-y-2 md:gap-y-3 lg:gap-y-7 hover:bg-purple-500;
+    }
+    .card-header{
+        @apply flex items-center justify-between;
+    }
+    .card-image{
+        @apply self-end object-contain w-24 h-24 pr-5 -mt-3;
+    }
+    .card-title{
+        @apply text-lg font-medium text-white;
+    }
+    .dots-wrapper{
+        @apply select-none hover:cursor-pointer;
+    }
+    .dots{
+        @apply inline-block w-1 h-1 bg-white rounded-full;
+    }
+    .stats-wrapper{
+        @apply flex items-center justify-between md:flex-col md:items-start md:gap-y-2;
+    }
+    .current-stats{
+        @apply text-3xl font-light text-white md:text-4xl lg:text-5xl;
+    }
+    .prev-stats{
+        @apply font-light text-white;
+    }
+}
